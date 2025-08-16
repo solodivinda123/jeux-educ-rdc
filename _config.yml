@@ -1,0 +1,123 @@
+# Configuration GitHub Pages pour Jeux Edu RDC
+title: "Jeux Edu RDC - Plateforme Éducative"
+description: "Plateforme éducative complète pour les étudiants de la République Démocratique du Congo"
+author: "Abraham Ngoyi Lumbuku"
+email: "abrahamlumbuku@gmail.com"
+url: "https://solodivinda123.github.io/jeux-edu-rdc"
+
+# Configuration Jekyll
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Configuration SEO
+lang: fr
+locale: fr_FR
+timezone: Africa/Kinshasa
+
+# Configuration des pages
+collections:
+  jeux:
+    output: true
+    permalink: /jeux/:name/
+  ressources:
+    output: true
+    permalink: /ressources/:name/
+
+# Configuration des métadonnées
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Abraham Ngoyi Lumbuku"
+      comments: true
+      share: true
+
+# Configuration des liens
+social:
+  name: "Abraham Ngoyi Lumbuku"
+  links:
+    - "https://github.com/solodivinda123"
+    - "https://solodivinda123.github.io/DIGITAL---CV/"
+
+# Configuration des couleurs
+colors:
+  primary: "#667eea"
+  secondary: "#764ba2"
+  accent: "#ffeb3b"
+  text: "#2c3e50"
+  background: "#f5f7fa"
+
+# Configuration des analytics (optionnel)
+analytics:
+  provider: google
+  google:
+    tracking_id: "" # Ajoutez votre ID Google Analytics ici
+
+# Configuration des commentaires (optionnel)
+comments:
+  provider: disqus
+  disqus:
+    shortname: "" # Ajoutez votre nom Disqus ici
+
+# Configuration des partages sociaux
+share:
+  - facebook
+  - twitter
+  - linkedin
+  - whatsapp
+
+# Configuration des métadonnées Open Graph
+og_image: "/images/logo-jeux-edu-rdc.png"
+og_type: "website"
+og_locale: "fr_FR"
+
+# Configuration Twitter Cards
+twitter_card: "summary_large_image"
+twitter_creator: "@solodivinda123"
+twitter_site: "@solodivinda123"
+
+# Configuration des liens de navigation
+navigation:
+  - title: "Accueil"
+    url: "/"
+  - title: "Jeux"
+    url: "/jeux/"
+  - title: "Bibliothèque"
+    url: "/bibliotheque.html"
+  - title: "Contact"
+    url: "https://solodivinda123.github.io/DIGITAL---CV/"
+
+# Configuration des liens de pied de page
+footer_links:
+  - title: "À propos"
+    url: "/#about"
+  - title: "Fonctionnalités"
+    url: "/#features"
+  - title: "Comment utiliser"
+    url: "/#how-to-use"
+  - title: "Contact"
+    url: "https://solodivinda123.github.io/DIGITAL---CV/"
+
+# Configuration des métadonnées pour l'éducation
+education:
+  country: "République Démocratique du Congo"
+  language: "Français"
+  target_age: "6-12 ans"
+  subjects:
+    - "Mathématiques"
+    - "Français"
+    - "Sciences"
+    - "Histoire"
+    - "Géographie"
+    - "Éducation Civique"
+  levels:
+    - "1ère année primaire"
+    - "2ème année primaire"
+    - "3ème année primaire"
+    - "4ème année primaire"
+    - "5ème année primaire"
+    - "6ème année primaire"

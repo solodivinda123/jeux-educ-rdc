@@ -1,0 +1,167 @@
+# Configuration du site Jeux Edu RDC
+# Ce fichier définit la structure et l'organisation du site
+
+# Informations générales du site
+site:
+  title: "Jeux Edu RDC"
+  subtitle: "Plateforme Éducative pour la RDC"
+  description: "Plateforme éducative complète combinant jeux interactifs et bibliothèque numérique pour les étudiants de la République Démocratique du Congo"
+  keywords: "éducation, RDC, jeux éducatifs, bibliothèque, manuels scolaires, primaire, mathématiques, français, sciences"
+  author: "Abraham Ngoyi Lumbuku"
+  email: "abrahamlumbuku@gmail.com"
+  url: "https://solodivinda123.github.io/jeux-edu-rdc"
+  language: "fr"
+  country: "République Démocratique du Congo"
+
+# Configuration des pages principales
+pages:
+  - name: "index"
+    title: "Accueil - Jeux Éducatifs"
+    description: "Bienvenue sur la plateforme éducative Jeux Edu RDC"
+    template: "home"
+    
+  - name: "bibliotheque"
+    title: "Bibliothèque Nationale RDC"
+    description: "Manuels scolaires et ressources éducatives du programme national d'enseignement primaire"
+    template: "library"
+
+# Configuration des jeux éducatifs
+games:
+  - name: "formes-geometriques"
+    title: "Formes Géométriques"
+    description: "Apprentissage interactif des formes géométriques de base"
+    age_range: "6-8 ans"
+    level: "Maternelle - 1ère année"
+    file: "Les formes géométriques niveau facile/index.html"
+    
+  - name: "alphabet-francais"
+    title: "Alphabet Français"
+    description: "Apprentissage de l'alphabet français A-Z"
+    age_range: "6-10 ans"
+    level: "1ère - 3ème année"
+    file: "apprendre alphabet en français A-Z.html"
+    
+  - name: "alphabet-anglais"
+    title: "Alphabet Anglais"
+    description: "Apprentissage de l'alphabet anglais"
+    age_range: "8-12 ans"
+    level: "3ème - 6ème année"
+    file: "alphat en en englais.html"
+    
+  - name: "couleurs"
+    title: "Apprentissage des Couleurs"
+    description: "Reconnaissance et épellation des couleurs"
+    age_range: "6-8 ans"
+    level: "Maternelle - 1ère année"
+    file: "ecoute et eppele de fome geo.html"
+    
+  - name: "chiffres"
+    title: "Apprentissage des Chiffres"
+    description: "Jeux de mathématiques et calculs"
+    age_range: "7-10 ans"
+    level: "2ème - 4ème année"
+    file: "game5.html"
+
+# Configuration de la bibliothèque
+library:
+  subjects:
+    - name: "mathematiques"
+      title: "Mathématiques"
+      levels: ["1ère année", "2ème année", "3ème année"]
+      pdf_file: "pdfs/math-1ere-annee.pdf"
+      cover_image: "images/1520906-gf.jpg"
+      
+    - name: "francais"
+      title: "Français / Éducation à la Citoyenneté"
+      levels: ["1ère année", "2ème année", "3ème année"]
+      pdf_file: "pdfs/francais-1ere-annee.pdf"
+      cover_image: "images/education-a-la-citoyennete-1eres-a-et-ses-c-et-e-d-et-ti-3.jpg"
+      
+    - name: "sciences"
+      title: "Sciences Naturelles"
+      levels: ["3ème année", "4ème année", "5ème année"]
+      pdf_file: "pdfs/sciences-3eme-annee.pdf"
+      cover_image: "images/9782401053779_internet_w290.jpg"
+      
+    - name: "histoire"
+      title: "Histoire du Congo"
+      levels: ["4ème année", "5ème année", "6ème année"]
+      pdf_file: "pdfs/histoire-4eme-annee.pdf"
+      cover_image: "images/9782401053793_1_75.jpg"
+      
+    - name: "geographie"
+      title: "Géographie du Congo"
+      levels: ["5ème année", "6ème année"]
+      pdf_file: "pdfs/geographie-5eme-annee.pdf"
+      cover_image: "images/COLLECTION-PYRAMIDE-1re-C-TOME-1.png"
+      
+    - name: "civique"
+      title: "Éducation Civique"
+      levels: ["6ème année"]
+      pdf_file: "pdfs/civique-6eme-annee.pdf"
+      cover_image: "images/images.jpg"
+
+# Configuration de la navigation
+navigation:
+  main:
+    - title: "Accueil"
+      url: "/"
+      icon: "🏠"
+      
+    - title: "Jeux Éducatifs"
+      url: "/#jeux"
+      icon: "🎮"
+      
+    - title: "Bibliothèque"
+      url: "/bibliotheque.html"
+      icon: "📚"
+      
+    - title: "Contact"
+      url: "https://solodivinda123.github.io/DIGITAL---CV/"
+      icon: "📞"
+
+# Configuration des métadonnées sociales
+social:
+  facebook:
+    app_id: ""
+    page_id: ""
+  twitter:
+    username: "solodivinda123"
+    card_type: "summary_large_image"
+  linkedin:
+    company: "Jeux Edu RDC"
+  whatsapp:
+    phone: "+243831700110"
+
+# Configuration des analytics
+analytics:
+  google:
+    tracking_id: ""
+  facebook:
+    pixel_id: ""
+
+# Configuration des performances
+performance:
+  image_optimization: true
+  minify_css: true
+  minify_js: true
+  cache_headers: true
+  gzip_compression: true
+
+# Configuration de la sécurité
+security:
+  content_security_policy: true
+  x_frame_options: "DENY"
+  x_content_type_options: "nosniff"
+  referrer_policy: "strict-origin-when-cross-origin"
+
+# Configuration des erreurs
+errors:
+  404:
+    title: "Page non trouvée"
+    message: "La page que vous recherchez n'existe pas."
+    redirect: "/"
+  500:
+    title: "Erreur serveur"
+    message: "Une erreur s'est produite. Veuillez réessayer."
+    redirect: "/"
